@@ -1,33 +1,87 @@
 /* variables */
-:root{
-    --color-primario: #0b6477;
-    --color-secundario: #14919b;
+:root {
+    --color-primario: #007799;       
+    --color-secundario: #005570;     
     --color-acento: #0ad1c8;
     --color-fondo: #f4f9f9;
     --color-texto: #1c2d37;
+    --color-texto-claro: #ffffff;    
 
     --fuente-principal: 'Lato', sans-serif;
 }
 
-
 /* reset */
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 /* body */
-
 body {
     font-family: var(--fuente-principal);
     font-size: 16px;
     line-height: 1.6;
     background-color: var(--color-fondo);
     color: var(--color-texto);
-    max-width: 1100px;
+    max-width: 900px;                
     margin: 0 auto;
     padding: 0 1rem;
 }
 
+/* header */
+header {
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--color-texto-claro); 
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+/* nav */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--color-texto-claro);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-texto-claro);
+}
+
+/* footer */
+footer {
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2.5rem;
+    border-radius: 8px 8px 0 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
