@@ -1,0 +1,33 @@
+/* variables */
+:root{
+    --color-primario: #0b6477;
+    --color-secundario: #14919b;
+    --color-acento: #0ad1c8;
+    --color-fondo: #f4f9f9;
+    --color-texto: #1c2d37;
+
+    --fuente-principal: 'Lato', sans-serif;
+}
+
+
+/* reset */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
