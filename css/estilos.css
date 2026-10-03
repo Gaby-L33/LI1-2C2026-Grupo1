@@ -39,12 +39,22 @@ header {
     text-align: center;
 }
 
-header h1 {
+h1 {
     color: var(--color-texto-claro); 
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 0.5px;
     margin-bottom: 1rem;
+}
+
+h2 {
+    color: #1c2d37;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: #3f5c60;
+    font-size: 1.2rem;
 }
 
 /* nav */
