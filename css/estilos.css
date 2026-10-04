@@ -2,10 +2,11 @@
 :root {
     --color-primario: #007799;       
     --color-secundario: #005570;     
-    --color-acento: #0ad1c8;
+    --color-acento: #067F79;
     --color-fondo: #f4f9f9;
     --color-texto: #1c2d37;
-    --color-texto-claro: #ffffff;    
+    --color-texto-claro: #ffffff;
+    --color-texto-oscuro: #1b056a;    
 
     --fuente-principal: 'Lato', sans-serif;
 }
@@ -24,7 +25,7 @@ body {
     line-height: 1.6;
     background-color: var(--color-fondo);
     color: var(--color-texto);
-    max-width: 900px;                
+    max-width: 1100px;                
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -39,6 +40,7 @@ header {
     text-align: center;
 }
 
+/* headings */
 h1 {
     color: var(--color-texto-claro); 
     font-size: 2rem;
@@ -48,12 +50,12 @@ h1 {
 }
 
 h2 {
-    color: #1c2d37;
+    color: var(--color-texto-oscuro);
     font-size: 1.5rem;
 }
 
 h3 {
-    color: #3f5c60;
+    color: var(--color-acento);
     font-size: 1.2rem;
 }
 
@@ -67,7 +69,7 @@ nav ul {
 }
 
 nav a {
-    color: var(--color-texto-claro);
+    color: var(--color-texto);
     text-decoration: none;
     font-weight: 700;
     font-size: 0.95rem;
@@ -88,10 +90,43 @@ footer {
     text-align: center;
     padding: 1.5rem 1rem;
     margin-top: 2.5rem;
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px;
 }
 
 footer p {
     font-size: 0.9rem;
     font-weight: 400;
+}
+
+/* section */
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+/* parrafos */
+p {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+/* articulos */
+
+article {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* clases */
+.atractivos-turisticos {
+    gap: 1.5rem;
+    border: 1px solid var(--color-secundario);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#inicio-lugares {
+    flex-direction: row;
+    gap: 4rem;
+    padding: 2rem;
 }
