@@ -31,13 +31,9 @@ body {
 }
 
 /* header */
+
 header {
-    background-color: var(--color-primario);
-    color: var(--color-texto-claro);
-    padding: 1.5rem 1rem;
     margin-bottom: 2rem;
-    border-radius: 0 0 8px 8px;
-    text-align: center;
 }
 
 /* headings */
@@ -57,30 +53,6 @@ h2 {
 h3 {
     color: var(--color-acento);
     font-size: 1.2rem;
-}
-
-/* nav */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-nav a {
-    color: var(--color-texto);
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 0.95rem;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-nav a:hover {
-    background-color: var(--color-secundario);
-    color: var(--color-texto-claro);
 }
 
 /* footer */
@@ -124,6 +96,42 @@ article {
     border-radius: 8px;
     padding: 1rem;
 }
+
+
+/* nav */
+.bg-turismo {
+    background-color: var(--color-primario) !important;
+}
+
+.navbar {
+    border-radius: 0 0 8px 8px;
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    color: var(--color-texto-claro) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-texto-claro) !important;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--color-secundario);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--color-secundario) !important;
+}
+
+/* fin nav */
 
 #inicio-lugares {
     flex-direction: row;
