@@ -37,7 +37,7 @@ header {
     margin-bottom: 2rem;
 }
 
-/* main - correccion de espaciado requerido */
+/* main */
 main {
     margin: 1.5rem 0;
     padding: 1.5rem 0.5rem;
@@ -143,21 +143,27 @@ article {
     border-bottom: 2px solid var(--color-acento);
 }
 
-/* figure de lugares corregido a clase con display flex */
+/* ajuste de tarjetas de lugares dentro de la grilla */
 .inicio-lugares {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 0.75rem;
-    margin: 1.5rem 0;
+    background-color: #ffffff;
+    border: 1px solid #d0e2e8;
+    border-radius: 8px;
     padding: 1rem;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .inicio-lugares img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
+
+
 
 
 /*tabla de ciudad.html*/
