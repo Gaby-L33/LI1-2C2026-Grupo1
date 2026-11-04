@@ -195,3 +195,19 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: #d6e8ee;
 }
+
+/* cards con flexbox */
+.contenedor-actividades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.tarjeta-actividad {
+    flex: 1 1 280px;
+    background-color: #ffffff;
+    border: 1px solid #d0e2e8;
+    border-radius: 8px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
