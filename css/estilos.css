@@ -6,7 +6,9 @@
     --color-fondo: #f4f9f9;
     --color-texto: #1c2d37;
     --color-texto-claro: #ffffff;
-    --color-texto-oscuro: #1b056a;    
+    --color-texto-oscuro: #1b056a;
+    --color-borde-tabla: #b8d4dc;
+    --color-fila-alterna: #e3eff3;
 
     --fuente-principal: 'Lato', sans-serif;
 }
@@ -31,9 +33,14 @@ body {
 }
 
 /* header */
-
 header {
     margin-bottom: 2rem;
+}
+
+/* main - correccion de espaciado requerido */
+main {
+    margin: 1.5rem 0;
+    padding: 1.5rem 0.5rem;
 }
 
 /* headings */
@@ -48,11 +55,13 @@ h1 {
 h2 {
     color: var(--color-texto-oscuro);
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 h3 {
     color: var(--color-acento);
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 /* footer */
@@ -62,7 +71,7 @@ footer {
     text-align: center;
     padding: 1.5rem 1rem;
     margin-top: 2.5rem;
-    border-radius: 8px 8px;
+    border-radius: 8px 8px 0 0;
 }
 
 footer p {
@@ -82,11 +91,12 @@ p {
     padding: 0.5rem;
 }
 
-/* articulos */
-
+/* articulos (se corrige con display: flex funcional) */
 article {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
 }
 
 /* clases */
@@ -97,8 +107,7 @@ article {
     padding: 1rem;
 }
 
-
-/* nav */
+/* nav Bootstrap */
 .bg-turismo {
     background-color: var(--color-primario) !important;
 }
@@ -115,26 +124,68 @@ article {
 }
 
 .navbar-nav .nav-link {
-    color: var(--color-texto-claro) !important;
+    color: rgba(255, 255, 255, 0.85) !important;
     font-weight: 700;
     font-size: 0.95rem;
     padding: 0.5rem 0.8rem;
     border-radius: 4px;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .navbar-nav .nav-link:hover {
     background-color: var(--color-secundario);
+    color: var(--color-texto-claro) !important;
 }
 
 .navbar-nav .nav-link.active {
-    color: var(--color-secundario) !important;
+    background-color: var(--color-secundario);
+    color: var(--color-texto-claro) !important;
+    border-bottom: 2px solid var(--color-acento);
 }
 
-/* fin nav */
+/* figure de lugares corregido a clase con display flex */
+.inicio-lugares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+}
 
-#inicio-lugares {
-    flex-direction: row;
-    gap: 4rem;
-    padding: 2rem;
+.inicio-lugares img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+
+/*tabla de ciudad.html*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: #ffffff;
+    border: 1px solid var(--color-borde-tabla);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+}
+
+th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border: 1px solid var(--color-borde-tabla);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--color-fila-alterna);
+}
+
+tbody tr:hover {
+    background-color: #d6e8ee;
 }
