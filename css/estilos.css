@@ -112,6 +112,9 @@ article {
 .navbar {
     border-radius: 0 0 8px 8px;
     padding: 0.8rem 1rem;
+    position: sticky;
+    width: 100%;
+    top: 0;
 }
 
 .navbar-brand {
@@ -248,7 +251,7 @@ body.oscuro {
     color: #e4eff2;
 }
 
-body.oscuro h2 {
+body.oscuro h1, body.oscuro h2 {
     color: #4dd0e1;
 }
 
