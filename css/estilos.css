@@ -244,3 +244,38 @@ tbody tr:hover {
     background-color: var(--color-secundario);
     color: var(--color-texto-claro);
 }
+
+/* modo oscuro */
+body.oscuro {
+    background-color: #121a1d;
+    color: #e4eff2;
+}
+
+body.oscuro h2 {
+    color: #4dd0e1;
+}
+
+body.oscuro h3 {
+    color: #26c6da;
+}
+
+body.oscuro .inicio-lugares,
+body.oscuro .tarjeta-actividad,
+body.oscuro table {
+    background-color: #1b282d;
+    border-color: #2c3e46;
+    color: #e4eff2;
+}
+
+body.oscuro th,
+body.oscuro td {
+    border-color: #2c3e46;
+}
+
+body.oscuro tbody tr:nth-child(even) {
+    background-color: #223238;
+}
+
+body.oscuro tbody tr:hover {
+    background-color: #2a3e46;
+}
