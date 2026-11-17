@@ -5,13 +5,15 @@ if (localStorage.getItem("tema") === "oscuro") {
   botton.innerText = "Modo Claro";
 }
 
-botton.addEventListener("click", () => (document.body.classList.toggle("oscuro")));
+botton.addEventListener("click", () => {document.body.classList.toggle("oscuro");
 
-if(document.body.classList.contains("oscuro")){
-    botton.innerText = "Modo Claro";
-    localStorage.setItem("tema", "oscuro");
-}
-else{
-    botton.innerText = "Modo Oscuro";
-    localStorage.setItem("tema", "claro");
-}
+    if(document.body.classList.contains("oscuro")){
+        botton.innerText = "Modo Claro";
+        localStorage.setItem("tema", "oscuro");
+    }
+    else{
+        botton.innerText = "Modo Oscuro";
+        localStorage.setItem("tema", "claro");
+    }
+
+});
