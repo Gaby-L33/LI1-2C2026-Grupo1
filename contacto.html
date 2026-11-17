@@ -75,6 +75,35 @@
                 </ul>
             </section>
         </div>
+
+        <section>
+            <h2 class="text-center">Contáctanos</h2>
+            <form class="formulario-contacto mx-auto" novalidate>
+                <div class="form-field">
+                    <label for="nombre" class="form-label">Nombre completo</label>
+                    <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" aria-label="Nombre completo" required>
+                </div>                
+
+                <div class="form-field">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" aria-label="Correo electrónico" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input class="form-control" type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono" aria-label="Teléfono">
+                </div>
+
+                <div class="form-field">
+                    <label for="comentario" class="form-label">Comentario</label>
+                    <textarea class="form-control" id="comentario" name="comentario" rows="5" placeholder="Comenta aquí..." aria-label="Tu comentario" required></textarea>
+                </div>
+
+                <button class="btn btn-turismo" type="submit">Enviar</button>
+
+                <div id="mensaje-estado" class="mt-3"></div>
+            </form>
+        </section>
     </main>
     <footer>
         <br>
